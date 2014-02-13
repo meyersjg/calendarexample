@@ -1,0 +1,92 @@
+@import "library";
+@import "reset";
+
+// Global templates
+
+%group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+%container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+// Global tags
+
+body {
+
+}
+
+a {
+    color: #800000;
+    text-decoration: none;
+
+    &:hover {
+      color: blue;
+    }
+}
+
+// Everything else
+
+.month {
+  margin: 0 auto;
+  display: table;
+}
+
+.week {
+  display: table-row;
+}
+
+.day {
+  display: table-cell;
+  width: 150px;
+  height: 120px;
+  border: 1px solid black;
+  font-family: "helvetica neue";
+}
+
+.dayblock {
+  margin: 0 auto;
+  display: table;
+}
+
+.dayname {
+  display: table-cell;
+  width: 150px;
+  height: 30px;
+  font-family: "helvetica neue";
+  text-align: center;
+}
+
+.school {
+  color: blue;
+}
+
+.today {
+  border: 2px solid black;
+}
+
+.monthtitle {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: "helvetica neue";
+  font-weight: bold;
+}
+
+.diffmonth {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 480px){
+  body{
+
+    .monthtitle {
+      font-size: 50px;
+    }
+  }
+}
