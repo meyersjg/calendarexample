@@ -102,7 +102,7 @@ a:hover {
 }
 
 .monthtitle {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
   margin-bottom: 15px;
   margin-top: 20px;
@@ -114,8 +114,17 @@ a:hover {
   background-color: #ddd;
 }
 
+@media screen and (max-width: 750px) {
+  body .dayname {
+    font-size: 80%;
+  }
+}
 @media screen and (max-width: 480px) {
   body .monthtitle {
-    font-size: 50px;
+    color: blue;
+  }
+  body .day {
+    float: left;
+    width: 100%;
   }
 }
